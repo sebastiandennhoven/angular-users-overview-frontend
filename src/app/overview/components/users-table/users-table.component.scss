@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    background: transparent;
+    img {
+        border-radius: 50%;
+        padding: 5px;
+    }
+}
+
+.filter-country-select {
+    display: flex;
+    .filter-spacer {
+        flex: 1;
+    }
+}
+
+mat-paginator {
+    background: transparent;
+}
+
+.row-item {
+    overflow: hidden;
+    -moz-animation-name: row-animate;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 400ms;
+    -webkit-animation-name: row-animate;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 400ms;
+}
+
+@keyframes row-animate {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+}

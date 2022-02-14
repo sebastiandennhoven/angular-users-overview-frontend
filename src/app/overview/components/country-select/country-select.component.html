@@ -1,0 +1,10 @@
+<mat-form-field appearance="fill">
+    <mat-label>Filter by country</mat-label>
+    <mat-select
+        (selectionChange)="countrySelectionChange.emit(countrySelected)"
+        name="countrySelection"
+        ngDefaultControl
+        [(ngModel)]="countrySelected">
+        <mat-option *ngFor="let country of countries" [value]="country">{{country}}</mat-option>
+    </mat-select>
+</mat-form-field>
